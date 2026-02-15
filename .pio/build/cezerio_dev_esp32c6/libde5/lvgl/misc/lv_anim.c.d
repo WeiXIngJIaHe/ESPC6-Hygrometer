@@ -1,0 +1,33 @@
+.pio/build/cezerio_dev_esp32c6/libde5/lvgl/misc/lv_anim.c.o: \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/lv_anim.c \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/lv_anim.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../lv_conf_internal.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../lv_conf_kconfig.h \
+ C:/Users/17368/.platformio/packages/framework-arduinoespressif32-libs/esp32c6/dio_qspi/include/sdkconfig.h \
+ include/lv_conf.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../hal/lv_hal_tick.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../hal/../lv_conf_internal.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/lv_assert.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/lv_log.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/lv_types.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/lv_mem.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/lv_timer.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/lv_math.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/lv_gc.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/lv_ll.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../draw/lv_img_cache.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../draw/lv_img_decoder.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../draw/../lv_conf_internal.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../draw/lv_img_buf.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../draw/../misc/lv_color.h \
+ C:/ESP32/ESP32Test/.pio/libdeps/cezerio_dev_esp32c6/lvgl/src/lv_conf_internal.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../draw/../misc/lv_assert.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../draw/../misc/lv_math.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../draw/../misc/lv_types.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../draw/../misc/lv_area.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../draw/../misc/lv_fs.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../draw/../misc/lv_types.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../draw/lv_draw_mask.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../draw/../misc/lv_math.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../core/lv_obj_pos.h \
+ .pio/libdeps/cezerio_dev_esp32c6/lvgl/src/misc/../core/../misc/lv_area.h
