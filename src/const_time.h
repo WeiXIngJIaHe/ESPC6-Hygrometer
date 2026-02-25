@@ -6,12 +6,8 @@ const char* ntpServer1 = "pool.ntp.org"; // 首选时间服务器
 const char* ntpServer2 = "time.nist.gov"; // 备用
 const long  gmtOffset_sec = 8 * 3600;     // 时区偏移：东八区 (8 * 3600)
 const int   daylightOffset_sec = 0;       // 夏令时偏移：无
-
-
 const char* ssid     = "W-";
 const char* password = "Aa20061006";
-
-
 
 // 全局时间结构体
 struct tm timeinfo;

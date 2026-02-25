@@ -1,11 +1,7 @@
 #ifndef AHT20_DRIVER_H
 #define AHT20_DRIVER_H
-
-
-
 #include <Arduino.h>
 #include <wire.h>
-
 #define AHT20_I2C_ADDR 0x38
 #define I2C_SDA_PIN 6
 #define I2C_SCL_PIN 7

@@ -7,7 +7,6 @@
 #include "Font.h"
 #include "const_time.h"
 
-
 #define DATA_X_START 250
 #define TEMP_Y       50
 #define HUMI_Y       120
@@ -36,26 +35,16 @@ void drawUserInterface()
 {
     // 4. 显示温度和湿度
      epd.clearBuffer(); // 清空缓存
-    
-
      epd.drawBitmap(200,14, TEMP, 48, 50, 1,0); // 绘制温度图标
      epd.drawBitmap(210,80, HUMI, 30, 54, 1,0); // 绘制湿度图标
-
-
     epd.drawBitmap(0,0,Background,184,240,1,0); // 绘制背景图片 
-    
     // 显示时间
-
     epd.setFont(&Rajdhani_Light_612pt7b);
     epd.setTextSize(1);
     epd.setTextColor(0); // 黑色字
     epd.setCursor(245,230); // 打印气压
     epd.print("200"); // 摄氏温度显示
     epd.print("KPa"); // 单位符号
-
-
-
-
 }
 
 void updateSensors(SystemData &data) 
@@ -68,18 +57,6 @@ void updateSensors(SystemData &data)
         sysData.Temp = t_aht;
         sysData.Humi = h_aht;
     }
-
-
-    /*float p_icp, t_icp;
-    bool icp_ok = icp.getData(p_icp, t_icp);
-    if (icp_ok)
-    {
-        sysData.Pressure = p_icp; // 气压数据单位是 kPa，直接赋值即可
-
-
-    }*/
-    
-
 }
 
 void UPTime()
@@ -88,7 +65,6 @@ void UPTime()
      if(checkMinuteChanged())
      {
         String clockStr = getClockString();
-        
         epd.fillRect(220,145,150, 60, 1); // 擦除旧时间 (白色填充区域)
         epd.setFont(&Rajdhani_Light_618pt7b);
         epd.setTextColor(0); // 黑色字
@@ -96,10 +72,7 @@ void UPTime()
         epd.setCursor(220,190);
         epd.print(clockStr); 
         epd.display(); // 局部刷新显示
-
-
      }
-
 
       if (ARDUINO_EVENT_WIFI_STA_GOT_IP) 
       {
@@ -112,13 +85,7 @@ void UPTime()
             epd.fillRect(370,220, 20, 20, 1); // 擦除 WiFi 图标区域 (白色填充)
             epd.drawBitmap(370,220, WIFI_NOT, 20, 20, 1,0); // 擦除 WiFi 图标区域
             epd.display(); // 局部刷新显示
-
-
         }
-
-        
-        
-        
     
 }
 
@@ -146,7 +113,6 @@ void updateDataUI(const SystemData &data)
     epd.print(data.Humi);
     epd.print("%"); 
     epd.display(); // 局部刷新显示
-
 }
 
 void updrawface()
@@ -157,15 +123,11 @@ void updrawface()
       epd.drawBitmap(83,69, EYE_Close, 20, 17, 1,0); // 绘制温度图标
       epd.display();
    }
-   
    else // 温度和湿度不在舒适范围内 
    {
     epd.drawBitmap(83,69, EYE_OPEN, 20, 17, 1,0); // 绘制温度图标
     epd.display();
    }
-   
-
-
 }
 
 void setup() 
@@ -189,9 +151,7 @@ void setup()
     epd.display(); // 显示更新
     updateSensors(sysData); // 获取新传感器数据        
     updateDataUI(sysData); // 更新显示数据
-
-
-        Serial.println("\n--- Arona Network Diagnostic Tool ---");
+    Serial.println("\n--- Arona Network Diagnostic Tool ---");
     
     // 1. 强制断开，清理残留
     WiFi.disconnect(true);
@@ -209,12 +169,8 @@ void setup()
 
     Serial.print("Connecting to: ");
     Serial.println(ssid);
-    
-    
 }
 
-
-   
 void loop() 
 {
     updateSensors(sysData); // 获取新传感器数据        
@@ -222,11 +178,6 @@ void loop()
     updrawface();
     UPTime();
     delay(30000);
-
-
-      
-    
-    
 }
 
       
