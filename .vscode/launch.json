@@ -12,8 +12,8 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug",
-            "executable": "C:/ESP32/ESP32Test/.pio/build/cezerio_dev_esp32c6/firmware.elf",
-            "projectEnvName": "cezerio_dev_esp32c6",
+            "executable": "C:/ESP32/ESP32Test/.pio/build/esp32-c6-devkitc-1/firmware.elf",
+            "projectEnvName": "esp32-c6-devkitc-1",
             "toolchainBinDir": "C:/Users/17368/.platformio/packages/toolchain-riscv32-esp/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "preLaunchTask": {
@@ -25,8 +25,8 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (skip Pre-Debug)",
-            "executable": "C:/ESP32/ESP32Test/.pio/build/cezerio_dev_esp32c6/firmware.elf",
-            "projectEnvName": "cezerio_dev_esp32c6",
+            "executable": "C:/ESP32/ESP32Test/.pio/build/esp32-c6-devkitc-1/firmware.elf",
+            "projectEnvName": "esp32-c6-devkitc-1",
             "toolchainBinDir": "C:/Users/17368/.platformio/packages/toolchain-riscv32-esp/bin",
             "internalConsoleOptions": "openOnSessionStart"
         },
@@ -34,8 +34,8 @@
             "type": "platformio-debug",
             "request": "launch",
             "name": "PIO Debug (without uploading)",
-            "executable": "C:/ESP32/ESP32Test/.pio/build/cezerio_dev_esp32c6/firmware.elf",
-            "projectEnvName": "cezerio_dev_esp32c6",
+            "executable": "C:/ESP32/ESP32Test/.pio/build/esp32-c6-devkitc-1/firmware.elf",
+            "projectEnvName": "esp32-c6-devkitc-1",
             "toolchainBinDir": "C:/Users/17368/.platformio/packages/toolchain-riscv32-esp/bin",
             "internalConsoleOptions": "openOnSessionStart",
             "loadMode": "manual"

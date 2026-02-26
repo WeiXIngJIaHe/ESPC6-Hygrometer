@@ -143,7 +143,7 @@ void EPD_SSD1680::displayPartial()
 
     // 3. 刷新指令
     // 注意：加载了自定义 LUT 后，通常使用 0xC7 或 0xFF 来激活
-    // 这里我们尝试 0xFF (Load LUT from register + Display)
+ 
     sendCommand(0x22);
     sendData(0xFF); // 或者 0xC7，取决于 LUT 的具体定义
     
