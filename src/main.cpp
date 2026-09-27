@@ -44,6 +44,7 @@ void drawUserInterface()
     epd.print("KPa"); // 单位符号*/
 }
 
+
 void updateSensors(SystemData &data) 
 {
      // 1. 读取 AHT20
